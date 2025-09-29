@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SecretSanta from "./secretSanta/secretSanta";
 import Footer from "./components/footer";
 

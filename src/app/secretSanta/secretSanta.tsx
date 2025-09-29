@@ -25,12 +25,6 @@ export default function SecretSanta() {
         });
     }
 
-    // Function to add a new participant
-    const addRow = () => {
-        // Note for prev, its reserved in react for the previous state
-        setParticipants(prev => [...prev, { name: "", contact_info: "" }]);
-    }
-
     const removeRow = (index: number) => {
         if (participants.length <= 1) return; // Prevent removing the last row
         setParticipants(prev => prev.filter((_, i) => i !== index));
@@ -77,7 +71,7 @@ export default function SecretSanta() {
         {/* Left Column */}
         <div>
             <h1 className="text-3xl font-bold mb-4">Secret Santa Maker</h1>
-            <p className="mb-4">Enter the names and contact information of participants below. Once everyone is added, click "Generate Secret Santa" to create the assignments.</p>
+            <p className="mb-4">Enter the names and contact information of participants below. Once everyone is added, click the button to create the assignments.</p>
             <CreateTable participants={participants} handleChange={handleChange} removeRow={removeRow} generateSecretSanta={
                 generateSecretSanta
             }/>
