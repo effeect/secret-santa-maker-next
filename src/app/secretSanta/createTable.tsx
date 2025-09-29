@@ -58,7 +58,8 @@ export default function CreateTable({ participants, handleChange, removeRow, gen
           ))}
         </tbody>
       </table>
-      <button
+      <div className="flex justify-center mb-6 items-center">
+        <button
         onClick={() => handleChange(participants.length, "name", "")}
         className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
       >
@@ -69,6 +70,7 @@ export default function CreateTable({ participants, handleChange, removeRow, gen
         className="ml-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
       >
         Generate Secret Santa
-      </button>
+      </button></div>
+
     </>)
 }

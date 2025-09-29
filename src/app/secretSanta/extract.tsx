@@ -42,7 +42,7 @@ export function ExportData({ data, filename = "secret_santa_assignments" }: Prop
 
     // Render two buttons for exporting data
     return (
-        <div className="mt-4 space-x-2">
+        <div className="flex justify-center mb-6 items-center gap-4">
             <button
                 onClick={handleExportCSV}
                 className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
